@@ -1,0 +1,11 @@
+@keyframes changeText {
+      0% { content: "Pemuda"; }
+      50% { content: "Pemudi"; }
+      100% { content: "Pemuda"; }
+    }
+
+    .text-animation::after {
+      content: "Pemuda";
+      animation: changeText 7s infinite;
+    }
+    
