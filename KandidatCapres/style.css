@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.p-col1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.h1-col1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.col3-judul {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 15px;
+    align-items: center;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: rgba(51, 51, 51, 0.08);
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    place-content: center;  
+    height: min-content;
+    width: min-content;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    box-shadow: rgb(0, 0, 0, 0.25);
+    background-color: rgba(179, 175, 175, 0.377);
+}
+
+.teks-dis {
+    white-space: pre;
+    width: auto;
+    position: relative;
+    height: auto;
+    flex: auto;
+}
+
+.teks-dis h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.content {
+    place-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 28px;
+    height: min-content;
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 70px;
+}
+
+.content1 {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.h3-content{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.content2 {
+    place-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 16px;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: min-content;
+}
+
