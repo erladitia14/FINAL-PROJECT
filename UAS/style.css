@@ -1,3 +1,95 @@
+
+:root {
+	--indent: 50px;
+	--indent2: 100px;
+}
+
+.wrapp {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.main {
+	padding-bottom: var(--indent2);
+}
+
+._mt {
+	margin-top: var(--indent2);
+}
+
+.content {
+	width: 100%;
+	height: auto;
+  	padding: 0 50px;
+}
+
+.section {
+	height: auto;
+	padding: 30px 0;
+}
+
+.gsap_slider {
+	height: 80vh;
+}
+
+.gsap__bl {
+	width: 100%;
+}
+
+.gsap__inner {
+	display: flex;
+	width: calc(100% + var(--indent));
+	flex: 0 0 auto;
+	overflow: hidden;
+}
+
+.gsap__track {
+	display: flex;
+	flex: 0 0 auto;
+	will-change: transform;
+	transition: 3.5s cubic-bezier(.075, 1, .25, 1);
+}
+
+.gsap__item {
+	flex: 0 0 auto;
+	width: 455px;
+	height: 455px;
+	will-change: transform;
+	overflow: hidden;
+}
+
+.gsap__item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gsap__item+.gsap__item {
+	margin-left: var(--indent);
+}
+
+.gsap_slider .content,
+.gsap_h,
+.gsap__bl,
+.gsap__inner,
+.gsap__item {
+	height: 100%;
+}
+
+.card-body {
+	opacity: 0;
+	transition: opacity 0.3s;
+	background: linear-gradient(to top, rgba(255, 127, 80, 1), rgba(255, 75, 43, 0));
+}
+      
+.card:hover .card-body {
+	opacity: 1;
+}
+
+
 @keyframes changeText {
       0% { content: "Pemuda"; }
       50% { content: "Pemudi"; }
@@ -9,3 +101,12 @@
       animation: changeText 7s infinite;
     }
     
+    .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+      }
+      
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
