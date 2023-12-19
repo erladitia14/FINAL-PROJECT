@@ -1,69 +1,209 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.judul {
+    padding: 180px 50px 20px;
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 80px;
+    height: min-content;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.row {
+    opacity: 1;
+    transform: perspective(1200px);
+    place-content: center flex-start;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 18px;
+    height: min-content;
+    max-width: 800px;
+    overflow: visible;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.col1-judul {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    flex: 0 0 auto;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
 .p-col1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin-top: 150px;
     font-size: 20px;
     font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.h1-col1 {
+.col2 {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    width: 87%;
+    flex: 0 0 auto;
+    height: auto;
+    position: relative;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.h1-col2 {
     text-align: center;
     font-family: sans-serif;
     color: black;
     font-size: 60px;
     font-weight: bold;
     margin-top: 20px;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    text-decoration: none;
+    text-transform: none;
 }
 
-.col3-judul {
+.col3 {
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.08);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 30px -20px;
     display: flex;
     flex: 0 0 auto;
     flex-flow: row;
-    gap: 15px;
-    align-items: center;
-    border-style: solid;
-    border-radius: 40px;
-    border-color: rgba(51, 51, 51, 0.08);
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    place-content: center;  
+    gap: 18px;
     height: min-content;
-    width: min-content;
+    overflow: hidden;
+    padding: 20px;
     position: relative;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 20px;
-    box-shadow: rgb(0, 0, 0, 0.25);
-    background-color: rgba(179, 175, 175, 0.377);
+    width: min-content;
+    will-change: var(transform);
+}
+
+.col3-judul {
+    place-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    background-color: #dddddd9c;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 10px;
+    height: 32px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 32px;
+    will-change: var(transform);
+}
+
+.col3-judul1 {
+    flex: 0 0 auto;
+    height: 18px;
+    position: relative;
+    width: 18px;
 }
 
 .teks-dis {
-    white-space: pre;
-    width: auto;
+    place-content: flex-start center;
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 30px;
+    height: min-content;
+    overflow: visible;
+    padding: 0px;
     position: relative;
-    height: auto;
-    flex: auto;
+    width: min-content;
 }
 
-.teks-dis h3 {
-    font-size: 20px;
+.teks-dis1 {
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 10px;
+    height: min-content;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: min-content;
+}
+
+.teks-dis2 {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    flex: 0 0 auto;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.teks-dis2 h3 {
+    font-size: 18px;
     font-family: sans-serif;
     align-items: center;
+    font-style: normal;
+    font-weight: bolder;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .content {
+    padding: 40px 50px 100px;
     place-content: flex-start;
     align-items: flex-start;
     display: flex;
@@ -72,11 +212,11 @@ html {
     gap: 28px;
     height: min-content;
     max-width: 1440px;
+    overflow: visible;
+    padding: 40px 100px 100px;
     position: relative;
     width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 70px;
+    z-index: 1;
 }
 
 .content1 {
@@ -84,12 +224,29 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-shrink: 0;
+    opacity: 1;
+    transform: perspective(1200px);
+    flex: 0 0 auto;
+    height: auto;
     position: relative;
+    white-space: pre-wrap;
+    width: 600px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .h3-content{
-    font-size: 25px;
+    font-size: 22px;
     font-family: sans-serif;
+    color: black;
+    text-align: left;
+    font-style: normal;
+    font-weight: bolder;
+    letter-spacing: -0.2px;
+    line-height: 1.4em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .content2 {
@@ -99,21 +256,25 @@ html {
     flex: 0 0 auto;
     flex-flow: row;
     gap: 16px;
-    position: relative;
-    overflow: visible;
-    width: 100%;
     height: min-content;
+    max-width: 1440px;
+    overflow: visible;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
 }
 
 .capres1 {
     border-bottom-width: 1px;
+    border-color: rgba(34, 34, 34, 0.08);
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
     border-style: solid;
+    border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -20px;
     display: flex;
@@ -125,18 +286,19 @@ html {
     padding: 28px;
     position: relative;
     width: 1px;
-    box-sizing: border-box;
+    will-change: var(transform);
 }
 
 .capres2 {
     border-bottom-width: 1px;
+    border-color: rgba(34, 34, 34, 0.08);
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
     border-style: solid;
+    border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -20px;
     display: flex;
@@ -148,18 +310,19 @@ html {
     padding: 28px;
     position: relative;
     width: 1px;
-    box-sizing: border-box;
+    will-change: var(transform);
 }
 
 .capres3 {
     border-bottom-width: 1px;
+    border-color: rgba(34, 34, 34, 0.08);
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
     border-style: solid;
+    border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -20px;
     display: flex;
@@ -171,7 +334,7 @@ html {
     padding: 28px;
     position: relative;
     width: 1px;
-    box-sizing: border-box;
+    will-change: var(transform);
 }
 
 .title-capres1 {
@@ -182,7 +345,7 @@ html {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 10px;
+    gap: 15px;
     height: min-content;
     overflow: hidden;
     padding: 0px;
@@ -198,7 +361,7 @@ html {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 10px;
+    gap: 15px;
     height: min-content;
     overflow: hidden;
     padding: 0px;
@@ -214,7 +377,7 @@ html {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 10px;
+    gap: 15px;
     height: min-content;
     overflow: hidden;
     padding: 0px;
@@ -346,132 +509,6 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(92, 87, 87);
-}
-
-.a1 {
-    display: block;
-    flex: 0 0 auto;
-    height: 32px;
-    position: relative;
-    width: 32px;
-    box-sizing: border-box;
-}
-
-.a2 {
-    display: block;
-    flex: 0 0 auto;
-    height: 32px;
-    position: relative;
-    width: 32px;
-    box-sizing: border-box;
-}
-
-.a3 {
-    display: block;
-    flex: 0 0 auto;
-    height: 32px;
-    position: relative;
-    width: 32px;
-    box-sizing: border-box;
-}
-
-.a-1 {
-    display: contents;
-}
-
-.a-2 {
-    display: contents;
-}
-
-.a-3 {
-    display: contents;
-}
-
-.tombol1 {
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    opacity: 1;
-    align-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    will-change: var(transform);
-}
-
-.tombol2 {
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    opacity: 1;
-    align-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    will-change: var(transform);
-}
-
-.tombol3 {
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    opacity: 1;
-    align-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    will-change: var(transform);
-}
-
-.tombol-1 {
-    opacity: 1;
-    flex: none;
-    height: 18px;
-    position: relative;
-    width: 18px;
-}
-
-.tombol-2 {
-    opacity: 1;
-    flex: none;
-    height: 18px;
-    position: relative;
-    width: 18px;
-}
-
-.tombol-3 {
-    opacity: 1;
-    flex: none;
-    height: 18px;
-    position: relative;
-    width: 18px;
 }
 
 .nama-visi1 {
@@ -735,16 +772,15 @@ html {
 .foto-capres1 {
     opacity: 1;
     transform: perspective(1200px);
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    max-height: unset;
-    min-height: unset;
     place-content: flex-start center;
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
+    flex-flow: row;
     gap: 10px;
     height: min-content;
+    max-height: 350px;
+    min-height: 250px;
     overflow: visible;
     padding: 0px;
     position: relative;
@@ -754,16 +790,15 @@ html {
 .foto-capres2 {
     opacity: 1;
     transform: perspective(1200px);
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    max-height: unset;
-    min-height: unset;
     place-content: flex-start center;
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
+    flex-flow: row;
     gap: 10px;
     height: min-content;
+    max-height: 350px;
+    min-height: 250px;
     overflow: visible;
     padding: 0px;
     position: relative;
@@ -773,16 +808,15 @@ html {
 .foto-capres3 {
     opacity: 1;
     transform: perspective(1200px);
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    max-height: unset;
-    min-height: unset;
     place-content: flex-start center;
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
+    flex-flow: row;
     gap: 10px;
     height: min-content;
+    max-height: 350px;
+    min-height: 250px;
     overflow: visible;
     padding: 0px;
     position: relative;
@@ -790,23 +824,15 @@ html {
 }
 
 .anies {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .anies1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .anies2 {
@@ -816,11 +842,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -829,7 +855,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -838,16 +863,16 @@ html {
 
 .anies3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -871,6 +896,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-anies4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-anies4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.anies4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.anies4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.anies4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-anies {
@@ -1056,23 +1139,15 @@ html {
 }
 
 .imin {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .imin1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .imin2 {
@@ -1082,11 +1157,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -1095,7 +1170,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -1104,16 +1178,16 @@ html {
 
 .imin3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -1137,6 +1211,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-imin4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-imin4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.imin4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.imin4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.imin4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-imin {
@@ -1672,23 +1804,15 @@ html {
 }
 
 .prabowo {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .prabowo1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .prabowo2 {
@@ -1698,11 +1822,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -1711,7 +1835,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -1720,16 +1843,16 @@ html {
 
 .prabowo3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -1753,6 +1876,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-prabowo4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-prabowo4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.prabowo4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.prabowo4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.prabowo4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-prabowo {
@@ -1935,23 +2116,15 @@ html {
 }
 
 .gibran {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .gibran1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .gibran2 {
@@ -1961,11 +2134,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -1974,7 +2147,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -1983,16 +2155,16 @@ html {
 
 .gibran3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -2016,6 +2188,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-gibran4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-gibran4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.gibran4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.gibran4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.gibran4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-gibran {
@@ -2822,23 +3052,15 @@ html {
 }
 
 .ganjar {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .ganjar1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .ganjar2 {
@@ -2848,11 +3070,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -2861,7 +3083,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -2870,16 +3091,16 @@ html {
 
 .ganjar3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -2903,6 +3124,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-ganjar4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-ganjar4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.ganjar4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.ganjar4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ganjar4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-ganjar {
@@ -3085,23 +3364,15 @@ html {
 }
 
 .mahfud {
-    align-self: unset;
-    flex: 0 0 auto;
-    width: 100%;
+    align-self: stretch;
+    flex: 1 0 0px;
     height: auto;
     position: relative;
-    box-sizing: border-box;
+    width: 1px;
 }
 
 .mahfud1 {
     display: contents;
-    box-sizing: border-box;
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, 0.08);
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .mahfud2 {
@@ -3111,11 +3382,11 @@ html {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: var(rgb(255, 255, 255));
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     opacity: 1;
+    height: 100%;
     cursor: default;
     gap: 12px;
     padding: 10px;
@@ -3124,7 +3395,6 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: min-content;
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
@@ -3133,16 +3403,16 @@ html {
 
 .mahfud3 {
     opacity: 1;
-    align-content: flex-end;
-    align-items: flex-end;
+    order: 4;
     gap: 16px;
-    justify-content: flex-start;
-    order: 3;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
+    justify-content: center;
     overflow: visible;
     padding: 0;
     position: relative;
@@ -3166,6 +3436,64 @@ html {
     padding: 0;
     position: relative;
     width: 100%;    
+}
+
+.a-mahfud4 {
+    opacity: 1;
+    cursor: pointer;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.a2-mahfud4 {
+    opacity: 1;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+}
+
+.mahfud4-a {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    text-decoration: none;
+    transform: none;
+    opacity: 1; 
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.mahfud4-h3 {
+    color: rgb(190, 30, 30);
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mahfud4-a1 {
+    opacity: 1;
+    height: 14px;
+    width: 13px;
+    flex: none;
+    position: relative;
 }
 
 .nama-mahfud {
